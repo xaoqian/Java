@@ -31,19 +31,17 @@ public class WordStatIndex{
                     } else {
                         int.count(text);
                     }
-    }       catch(FileNotFoundException e){
-        }
-
-    }
-            catch(IOException){
-            printStackTrace();
-    }
-        finally{
-            try {
-                if (reader != null) {
-                    reader.close();
-                }
-            }
+            
+       
+                 }catch(IOException){
+                 printStackTrace();
+    
+                 }finally{
+                        try {
+                            if (reader != null) {
+                            reader.close();
+                            }
+                        }
 
 
 
