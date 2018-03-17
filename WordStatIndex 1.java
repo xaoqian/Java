@@ -16,7 +16,7 @@ public class WordStatIndex{
         String fileName = sc.nextLine();
         BufferedReader br  = new BufferedReader(new FileReader(fileName));
 
-            if (int.br.length > 0){
+           f (int.br.length > 0){
                 try {
 
                     InputStreamReader isr = new InputStreamReader();
@@ -31,17 +31,19 @@ public class WordStatIndex{
                     } else {
                         int.count(text);
                     }
-            
-       
-                 }catch(IOException){
-                 printStackTrace();
-    
-                 }finally{
-                        try {
-                            if (reader != null) {
-                            reader.close();
-                            }
-                        }
+    }       catch(FileNotFoundException e){
+        }
+
+    }
+            catch(IOException){
+            printStackTrace();
+    }
+        finally{
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            }
 
 
 
